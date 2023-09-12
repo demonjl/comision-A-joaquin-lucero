@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --bg-body: white;
+    --color-body: black;
+    --height-header: 70px;
+    --gray: #e6e5e5;
+    --gray2: #f2f2f2;
+    --gray-dark: #b3b3b3;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: var(--bg-body);
+    color: var(--color-body);
+}
+
+.root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 5rem;
+    min-height: 100vh;
+}
+h1 {
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+.grid {
+    display: grid;
+}
+
+/*==========
+HEADER 
+==========*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--height-header);
+    border-bottom: 1px solid var(--gray);
+    background-color: white;
+    transition: all .3s;
+}
+.header__container {
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    width: 6rem;
+}
+.header__logo img {
+    height: 100%;
+    width: 100%;
+}
+.header__title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+}
+
+
+/*==========
+MAIN
+==========*/
+
+.main {
+    padding-top: var(--height-header);
+    display: grid;
+}
+
+.s_publicaciones {
+    padding: 2rem 0;
+}
+
+.s_publicaciones h2 {
+    font-weight: 500;
+}
+
+.s_publicaciones__header {
+    margin-bottom: 1rem;
+}
+
+.s_publicaciones__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 2rem;
+}
+
+.list_publicacion_description::first-letter, .list_publicacion_title::first-letter {
+    text-transform: uppercase;
+}
+
+.list_publicacion {
+    transition: all .2s ;
+}
+.list_publicacion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.list_publicacion_description {
+    max-height: 100px;
+    /* overflow-y: scroll; */
+    overflow: auto;
+}
+
+/*==========
+FOOTER
+==========*/
+footer {
+    padding: 1rem 0;
+    border-top: 1px solid var(--gray);
+}
+
+footer .copy {
+    align-items: center;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--gray-dark);
+  
+}
+p {
+    margin: 0;
+    padding: 0;
+}

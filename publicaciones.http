@@ -1,0 +1,26 @@
+### mostrar todas las publicaciones
+GET http://localhost:4000/api/publicaciones
+
+### mostrar publicacion por id
+GET http://localhost:4000/api/publicaciones/2
+
+### crear publicacion
+POST http://localhost:4000/api/publicaciones
+Content-Type: application/json
+
+{
+    "titulo": "titulo de prueba 5",
+    "descripcion": "una descripcion",
+    "img": "https://image.tmdb.org/t/p/w500//iAv3HAlrrIgjcf2yCFvedJzekXT.jpg"
+}
+
+### editar publicacion
+PUT http://localhost:4000/api/publicaciones/2
+Content-Type: application/json
+
+{
+    "img": "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=2000"
+}
+
+### eliminar publicacion
+DELETE http://localhost:4000/api/publicaciones/2
