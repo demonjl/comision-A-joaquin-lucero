@@ -15,7 +15,7 @@
   <a href="#configuracion">Configuracion</a>
 </p>
 
-![screenshot]()
+![screenshot](https://github.com/demonjl/comision-A-joaquin-lucero/blob/master/src/public/img/readme.png)
 
 ## Caracteristicas
 
