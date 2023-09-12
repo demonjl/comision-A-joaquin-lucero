@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">Un simple CRUD en <a href="https://nodejs.org/es" target="_blank">NodeJS</a>.</h4>
+<h4 align="center">Un simple CRUD en <a href="https://nodejs.org/es" target="_blank">NodeJS</a> y <a href="https://www.mysql.com/" target="_blank">MySQL</a>.</h4>
 
 <p align="center">
   <a href="#caracteristicas">Caracteristicas</a> •
@@ -26,6 +26,7 @@
 * Actualizar publicacion por id
 * Eliminar publicacion por id
 * Server Side Rendering
+* Conexion base de datos MySQL
 
 ## Como Usar
 
