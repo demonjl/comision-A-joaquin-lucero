@@ -52,6 +52,12 @@ La unica configuracion ha realizar es opcional, la cual es, crear un archivo .en
 ```bash
 # Puerto para el servidor
 PORT=NUMERO_PUERTO
+# Variables para la conexion con la base de datos
+DB_NAME="NOMBRE_DATABASE"
+DB_USER="USUARIO_DATABASE"
+DB_PASSWORD="CONTRASEÑA_DATABASE"
+DB_HOST="HOST_DATABASE"
+DB_DIALECT="mysql"
 ```
 
 ---
