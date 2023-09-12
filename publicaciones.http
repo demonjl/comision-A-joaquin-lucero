@@ -19,7 +19,7 @@ PUT http://localhost:4000/api/publicaciones/2
 Content-Type: application/json
 
 {
-    "img": "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=2000"
+    "titulo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
 }
 
 ### eliminar publicacion

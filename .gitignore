@@ -22,3 +22,6 @@ package-lock.json
 
 # pnpm
 pnpm-lock.yaml
+
+# test http server
+publicaciones.http
