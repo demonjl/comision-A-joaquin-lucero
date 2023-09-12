@@ -3,17 +3,20 @@ import morgan from 'morgan';
 import cors from 'cors';
 import helmet from 'helmet'
 import path from 'path';
-import { randomUUID } from 'node:crypto';
 import {startDb} from './src/config/database.js'
 import router from './src/routes/foro.routes.js'
+import * as dotenv from 'dotenv'
+
+dotenv.config()
 
 // Initializations
 const app = express();
 
 // Settings
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 4000); // env not working
 app.set('views', path.join(path.resolve(), 'src/views'));
 app.set('view engine', 'ejs');
+
 
 // Middlewares
 app.use(morgan('dev'));
@@ -22,11 +25,6 @@ app.use(express.json())
 app.use(helmet({
     contentSecurityPolicy: false
 }))
-
-// Global Variables
-// app.use((req, res, next) => {
-//     next();
-// });
 
 // Routes
 app.use('/', router)

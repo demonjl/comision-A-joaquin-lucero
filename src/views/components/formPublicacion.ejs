@@ -1,0 +1,30 @@
+<div class="modal fade" id="modalPublicacion" tabindex="-1" aria-labelledby="modalPublicacion" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalPublicacionTitulo">Publicacion</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="modalFormulario" class="grid gap-3">
+                <div class="grid gap-1">
+                    <label for="titulo" class="form-label">Titulo</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Titulo de la publicacion">
+                </div>
+                <div class="grid gap-1">
+                    <label for="descripcion" class="form-label">Descripcion</label>
+                    <textarea class="form-control" id="descripcion" name="descripcion" rows="3" placeholder="Descripcion de la publicacion"></textarea>
+                </div>
+                <div class="grid gap-1">
+                    <label for="img" class="form-label">Imagen</label>
+                    <input type="text" class="form-control" id="img" name="img" placeholder="URL de la imagen">
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" id="btnGuardar" class="btn btn-primary">Guardar</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>

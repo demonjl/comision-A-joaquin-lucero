@@ -1,9 +1,10 @@
 import {Publicacion} from "../models/publicaciones.js";
+import { contacts } from "../data/contacts.js";
 
 export const ctrlViewPublicaciones = async (req, res) => {
     try {
         const publicaciones = await Publicacion.findAll();
-        res.render('index.ejs',{publicaciones})
+        res.render('index.ejs',{publicaciones, contacts})
     } catch (error) {
         console.log(error);
         res.status(500).json({

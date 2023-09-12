@@ -144,9 +144,10 @@ MAIN
 
 .s_publicaciones__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 2rem;
 }
+
 
 .list_publicacion_description::first-letter, .list_publicacion_title::first-letter {
     text-transform: uppercase;
@@ -159,11 +160,25 @@ MAIN
     transform: translateY(-5px);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
+
+.list_publicacion_content {
+    visibility: hidden;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    /* transition: all .2s ; */
+}
+
+.list_publicacion:hover .list_publicacion_content {
+    visibility: visible;
+    background-color: rgb(255 255 255 / 0.8);
+    transition: all .3s;
+}
 .list_publicacion_description {
     max-height: 100px;
     /* overflow-y: scroll; */
     overflow: auto;
 }
+
 
 /*==========
 FOOTER
@@ -179,6 +194,15 @@ footer .copy {
     font-size: 0.8rem;
     color: var(--gray-dark);
   
+}
+
+footer i {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--gray-dark);
+}
+footer i:hover {
+    color: #0dcaf0;
 }
 p {
     margin: 0;
