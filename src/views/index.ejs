@@ -65,7 +65,7 @@
                 <p class="copy">©️ <%= new Date().getFullYear(); %> Joaquin Lucero</p>
                 <div class="d-flex gap-2">
                     <% contacts.forEach(contact => { %>
-                        <a href=<%= contact.link %> target="_blank" class="text-decoration-none text-dark">
+                        <a href=<%= contact.link %> target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark" >
                             <i class="<%= contact.icon %> "></i>
                         </a>
                     <% }) %>
